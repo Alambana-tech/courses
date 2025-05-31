@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alambana Course</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 0.3em;
+      text-shadow: none; /* hapus efek blur */
+    }
+    /* Ubah semua h2 jadi warna hitam */
+    h2 {
+      color: #000;
+      margin-top: 1.5em;
+      font-weight: 600;
+      text-align: center;
+    }
+    p {
+      color: #eee;
+      max-width: 700px;
+      margin: 0 auto 1em;
+      line-height: 1.5;
+      text-align: center;
+      text-shadow: none; /* hapus efek blur */
+    }
+    .container {
+      background: #fff;
+      border-radius: 15px;
+      max-width: 900px;
+      padding: 2.5em 2em;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    /* Perjelas teks di dalam kotak putih */
+    .container p {
+      color: #111;           /* lebih gelap */
+      font-weight: 600;      /* lebih tebal */
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 1em;
+    }
+    ul {
+      color: #111;           /* lebih gelap */
+      font-weight: 600;      /* lebih tebal */
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      max-width: 700px;
+      margin: 0 auto 1.5em;
+      padding-left: 1.3em;
+      font-size: 1.1em;
+    }
+    ul li {
+      margin-bottom: 0.8em;
+      line-height: 1.4;
+      position: relative;
+      padding-left: 1.5em;
+    }
+    ul li::before {
+      content: "✔";
+      color: #2575fc;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+    }
+    .highlight {
+      color: #2575fc;
+      font-weight: 700;
+    }
+
+    /* Form Styles */
+    form {
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      font-weight: 600;
+      color: #444;
+    }
+    input, textarea {
+      padding: 12px 15px;
+      font-size: 1em;
+      border-radius: 8px;
+      border: 2px solid #2575fc;
+      transition: border-color 0.3s;
+      resize: vertical;
+    }
+    input:focus, textarea:focus {
+      border-color: #6a11cb;
+      outline: none;
+      box-shadow: 0 0 8px #6a11cb;
+    }
+    button {
+      background: #2575fc;
+      color: white;
+      border: none;
+      font-weight: 700;
+      font-size: 1.1em;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+    }
+    button:hover {
+      background: #6a11cb;
+      box-shadow: 0 7px 20px rgba(106, 17, 203, 0.6);
+    }
+
+    footer {
+      color: #ddd;
+      font-size: 0.9em;
+      text-align: center;
+      margin-top: auto;
+      padding-bottom: 10px;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5em 1em;
+      }
+      ul {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Alambana Course</h1>
+  <p class="highlight">Tempat terbaik untuk anak Anda belajar dengan nyaman dan hasil maksimal!</p>
+
+  <div class="container">
+    <h2>Perkenalan Diri</h2>
+    <p>
+      Halo! Saya Miss Eka, saya siap bantu kamu mengubah kesulitan belajar jadi keunggulan!
+
+Di sini, kita nggak cuma ngejar nilai, tapi juga bikin kamu benar-benar paham materi yang sulit, dengan cara yang seru dan efektif sesuai gaya belajar kamu.
+
+Yuk, raih potensi terbaikmu bersama saya!
+      <br /><br />
+      Selain itu, suasana belajar yang nyaman dan familiar di rumah membuat anak lebih fokus dan percaya diri.
+    </p>
+  </div>
+
+  <div class="container">
+    <h2>Mengapa Anak Anda Harus Les di Tempat Kami?</h2>
+    <p>
+      Les Privat di Rumah kami didirikan dengan tujuan memberikan pengalaman belajar yang menyenangkan dan efektif. Kami mengutamakan pendekatan personal untuk membantu anak-anak memahami pelajaran Bahasa Inggris dengan lebih mudah dan percaya diri.
+      <br /><br />
+      Dengan lingkungan belajar yang nyaman dan metode yang interaktif, kami berkomitmen mendampingi setiap siswa meraih prestasi terbaik.
+    </p>
+  </div>
+
+  <div class="container">
+    <h2>Keunggulan Les di Tempat Kami</h2>
+    <ul>
+      <li>Guru profesional dan sabar, berpengalaman mengajar berbagai jenjang</li>
+      <li>Materi disesuaikan dengan kebutuhan dan kurikulum sekolah</li>
+      <li>Fleksibilitas jadwal les sesuai kesepakatan</li>
+      <li>Metode belajar interaktif dan menyenangkan</li>
+      <li>Progress belajar dipantau dan dilaporkan secara berkala kepada orang tua</li>
+      <li>Suasana belajar nyaman tanpa harus keluar rumah</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2>Alamat Kami</h2>
+    <p>Perumahan Taman Gading, jalan Mataram 3, NO.A112 Cilacap selatan, Kabupaten Cilacap, Jawa Tengah.</p>
+  </div>
+
+  <div class="container">
+    <h2>Biaya Les</h2>
+    <ul>
+      <li>Privat Bahasa Inggris: <span class="highlight">Rp150.000 / sesi (1.5 jam)</span></li>
+      <li>Diskon khusus untuk paket 10 sesi: <span class="highlight">Rp1.350.000</span></li>
+      <li>Gratis konsultasi kebutuhan belajar dan jadwal</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2>Hubungi Kami</h2>
+    <p>Ingin tahu lebih lanjut atau mendaftar? Isi formulir di bawah ini dan kami akan segera menghubungi Anda!</p>
+    <form action="https://formspree.io/f/xrbkzoek" method="POST">
+      <label for="name">Nama Lengkap:</label>
+      <input type="text" id="name" name="name" placeholder="Nama Anda" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" placeholder="email@domain.com" required />
+
+      <label for="phone">Nomor Telepon:</label>
+      <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx" required />
+
+      <label for="message">Pesan / Pertanyaan:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tulis pesan atau pertanyaan Anda" required></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Les Privat di Rumah - Semua hak dilindungi
+  </footer>
+</body>
+</html>
